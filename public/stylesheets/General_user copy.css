@@ -1,0 +1,388 @@
+/*Set the background color ,height and overflow for the whole page*/
+body{
+    background-color:#F3F2EF;
+    height:auto;
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+/*Set the style for the button "Me"*/
+.moreinfo{
+    position:absolute;
+    padding-right: 10px;
+    background-color: white;
+    left:30px;
+    color:black;
+    padding:2px;
+}
+
+/*Set the style of the button contained by the div (class=moreinfo)*/
+.moreinfo button{
+    background-color: white;
+    border: none;
+}
+
+/*Set the style for the div so that it has the effect of a button (the div will be darkened when the mouse is placed over it)*/
+.moreinfo:hover{
+    background-color: lightgray;
+}
+
+/*Set the position of the student_id contained by the userinfo div element*/
+#student_id{
+    position: absolute;
+    top:14%;
+    left:25%;
+}
+
+/*Set the style of header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    border-radius: 20px;
+  }
+
+/* Set the style of the log out button in the header, and remove the underscore from the URL text*/
+  header #log_out{
+    margin-right: 3%;
+    text-decoration: none;
+    color: black;
+  }
+
+  /*Remove the underline of the innertext of the log out button*/
+  #log_out a{
+    text-decoration: none;
+    color: black;
+  }
+
+  /*Set the style for the div so that it has the effect of a button (the div will be darkened when the mouse is placed over it)*/
+  #log_out:hover{
+      background-color: lightgray;
+  }
+
+  /*Set the position of logo in the header of page*/
+  .logo {
+    margin-left: 45%;
+  }
+
+/*
+.page_head{
+    top:0;
+    left:0;
+    margin-bottom: 10px;
+    width:150%;
+    height:50px;
+    background-color: white;
+    border:1px solid lightgrey;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}*/
+
+/*Set the style of the close button*/
+.close_slide_button{
+    font-size: 110%;
+    position:absolute;
+    right:5%;
+    top:3%;
+    background-color: white;
+    border:none;
+    border-radius: 20px;
+}
+
+/*Set the button to turn into a light grey effect when the mouse is placed on the close button*/
+.close_slide_button:hover{
+    background-color: lightgray;
+}
+
+/*Set attributes for the hidden page*/
+#slide_page{
+    position:fixed;
+    top:0;
+    bottom: 0px;
+    left:-100%; /*When the page doesn't appear, hide the page at the left of the page*/
+    height:100%;
+    width:35%;
+    background-color: #F3F2EF;
+    border:1px solid black;
+    border-radius: 0px 20px 20px 0px;
+    transition: left 0.5s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    z-index: 9999;/*When this page appears, it should be at the top of all pages*/
+}
+
+/*Set style for the userino div contained by the slide_page div*/
+#slide_page .userinfo{
+    top:0;
+    height:22%;
+    width:100%;
+    left:0;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+/*Set the style of the circular logo representing the logger*/
+.circle{
+    position: absolute;
+    left:35%;
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    border:1px solid lightgrey;
+    background-color: white;
+    top:4%;
+}
+
+/*set the style and position of the friend list of the logger*/
+#slide_page .contact_person{
+    top:30%;
+    left:0;
+    width:100%;
+    height:25%;
+    background-color: white;
+    overflow-x: auto;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/*set the style and position of the club list of the logger*/
+#slide_page .clubs{
+    top:60%;
+    width:100%;
+    height:43%;
+    background-color:white;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/*set the style of the word in the club list of the logger*/
+.clubs .club{
+    width:100%;
+    color:black;
+    margin:10px;
+    text-decoration: none;
+}
+
+/*set the style and position of the words inside the circle*/
+.name_of_user{
+    text-align: center;
+    position: absolute;
+    top:17%;
+    left:26%;
+    font-size: 200%;
+}
+
+/*Set the effect for the div so that it looks similar to the button*/
+.button {
+    width:100%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: white;
+    text-align: center;
+    text-decoration: none; /*Remove the underscore from the URL text*/
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer; /* Set the mouse pointer style to hand type to indicate that the element is clickable */
+  }
+
+  /*Set the style for the div so that it has the effect of a button (the div will be darkened when the mouse is placed over it)*/
+  .button:hover{
+    background-color: lightgray;
+  }
+
+/*暂时填充*/
+
+/*
+.clubevent{
+    position:relative;
+    text-align: center;
+    margin-bottom: 20px;
+    width:99%;
+    height:45vh;
+    margin: 0 0 15px 0;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }*/
+
+/*Set the style for events in all screens of the general user*/
+.event{
+    position:relative;
+    margin-bottom: 100px;
+    left:5%;
+    width:90%;
+    height:45vh;
+    margin: 0 0 15px 0;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    text-decoration:none;
+    color: black;
+}
+
+/*Remove the underscore from the URL text*/
+#main a{
+    text-decoration: none;
+}
+
+/*Set the style for the div so that it has the effect of a button (the div will be darkened when the mouse is placed over it)*/
+.event:hover{
+    background-color: lightgray;
+}
+
+.friend{
+    color:black;
+    margin:10px;
+    text-decoration: none;
+}
+
+
+/*Club page css*/
+
+.member_state{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    left:2%;
+    width:21%;
+    height:42%;
+    margin-right:10px;
+    margin-top:5px;
+    background-color: white;
+    border:1px solid lightgrey;
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/*set the style and position of the edit button*/
+.member_state #edit_personinfo{
+    height:30px;
+    font-size:110%;
+    background-color: white;
+    width:100%;
+    position: absolute;
+    bottom: 2%;
+    border:none;
+    border-top-color: black;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/*Set the style for the div so that it has the effect of a button (the div will be darkened when the mouse is placed over it)*/
+#edit_personinfo:hover{
+    background-color: lightgray;
+}
+
+/*set the position of each personal information of the logger*/
+.member_state .personal_info{
+    top:25%;
+    position: absolute;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+
+/*#member_state #quit_club{
+    position:absolute;
+    left:50%;
+    bottom:10px;
+}*/
+
+/*set the position of the events*/
+#main{
+    position:absolute;
+    left:22%;
+    width:50%;
+    height:auto;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/*set the style of club updates*/
+.clubupdate{
+    position:absolute;
+    right: 2%;
+    width:25%;
+    top:40%;
+    height:70%;
+    margin-left:10px;
+    margin-top:5px;
+    background-color: white;
+    border:1px solid lightgrey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/*set the style of the list of club members*/
+#members{
+    position:absolute;
+    right: 2%;
+    width:25%;
+    height:30%;
+    top:40%;
+    margin-left:10px;
+    margin-top:5px;
+    background-color: white;
+    border:1px solid lightgray;
+    border-radius: 5%;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/*set the style of the club description box*/
+.club_description{
+    position:absolute;
+    right: 2%;
+    width:25%;
+    height:25%;
+    margin-left:10px;
+    margin-top:5px;
+    background-color: white;
+    border:1px solid lightgrey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/*Set a transparent page that covers the entire page*/
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

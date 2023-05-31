@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin2</title>
+    <link rel="stylesheet" href="stylesheets/signin2.css">
+</head>
+<body>
+    <img id="signinbg" src="/images/WechatIMG47757.png" alt="signInPage">
+    <div id="leftSide1">
+        <!--divide the sign in page into 2 models(left and right), on the left module is the name and description of the website-->
+        <h1 id="webName">UNION HOUSE</h1>
+        <p id="nameDesc">UNION HOUSE helps you connect and share <br>with the people in your clubs.</p>
+    </div>
+    <div id="rightSide1">
+        <!--on the right module is the sign in function for the user-->
+        <h1 id="signInLable">SIGN IN</h1> <!--sign in label-->
+        <div id="UP"> <!--2 input boxes for the user to enter student ID and password-->
+            <p><input id="IDInput1" type="text" size="43" placeholder="Please enter your student ID"></p>
+            <p><input id="passwordInput1" type="password" size="43" placeholder="Please enter your password"></p>
+        </div>
+        <div id="signInUpButtons"> <!--2 buttons for users to choose, either sign in or sign up-->
+            <button type="button" id="signInButton1" onclick="signInSuccess()">Sign In</button>
+            <button type="button" id="signUpButton1" onclick="location.href='https://www.baidu.com/'">Sign Up</button>
+            <p id="errorM1"></p> <!--if there is something wrong with the student ID or password, it will show the corresponding error message below the two buttons-->
+        </div>
+    </div>
+    <script src="javascripts/signin2.js"></script>
+</body>
+</html>

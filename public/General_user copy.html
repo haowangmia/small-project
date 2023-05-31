@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_page</title>
+    <link rel="stylesheet" href="stylesheets/General_user.css">
+    <script src="https://kit.fontawesome.com/384684e39d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Navigation bar for the page including a logo, a "moreinfo" div, and a log out button-->
+    <header>
+        <div class="logo">
+          <img src="logo.png" alt="logo">
+        </div>
+
+        <!--Click the "Me" button a page will slides from left-->
+        <div class="moreinfo">
+            <div type="button" onclick="slide()"> Me </div>
+        </div>
+
+        <div id="log_out">
+            <a href="https://www.google.com">Log out</a>
+        </div>
+
+      </header>
+
+
+    <!--This page will only appear when you click on "moreinfo" and contains the logger's contact information and information about the clubs he has joined.-->
+    <div id="slide_page">
+        <button type="button" class="close_slide_button" onclick="close_slide()">close</button>
+
+        <div class="userinfo">
+            <a href="https://google.com" class="people_name">
+                <div class="circle">
+                    <div class="name_of_user">LL</div>
+                </div>
+            </a>
+
+            <div id="student_id"><p>Student ID ********</p></div>
+
+        </div>
+
+        <hr/>
+
+        <!--Logger's contact person's information-->
+        <div class="contact_person">
+
+            <div class="button">
+                <a class="friend" href="#">
+                <p>friend1</p>
+                </a>
+            </div>
+
+            <div class="button">
+                <a class="friend" href="#">
+                <p>friend2</p>
+                </a>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!--The club(s) the user have already joined-->
+        <div class="clubs">
+            <div class="button">
+                    <a class="club" href="#">
+                    <p>club1</p>
+                    </a>
+            </div>
+
+            <div class="button">
+                <a class="club" href="#">
+                <p>club2</p>
+                </a>
+            </div>
+
+            <div class="button">
+                <a class="club" href="#">
+                <p>club3</p>
+                </a>
+            </div>
+
+            <div class="button">
+                <a class="club" href="#">
+                <p>club4</p>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+        <!--Clicking on each event on this section will jump to the club where the event was published-->
+        <a href="General_user_Club.html">
+            <div class="event">
+                <p>Event1</p>
+            </div>
+        </a>
+
+        <a href="General_user_Club.html">
+            <div class="event">
+                <p>Event2</p>
+            </div>
+        </a>
+
+        <div>
+            <button type="button" onclick="letsqlthingshowonhtml()">testbottom</button>
+        </div>
+
+    <script src="javascripts/User_and_Club.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,129 @@
+#signupbg{ /*take up the entire page with the background image*/
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width:100%;
+    height:100%;
+    
+}
+#middlePart{ /*find a place for the middle part div element in the middle of the page, and divide it into 3 modules*/
+    position:absolute;
+    height: 97%;
+    width: 50%;
+    left:25%;
+}
+#middlePart #firstPart1{ /*set the position of the first module in the middle part div element*/
+    position:absolute;
+    top: 10%;
+    left:15%;
+    height:25%;
+}
+#middlePart #firstPart1 #welcoming { /*put the welcoming sentence in the first module of the middle part and set its font, size and color*/
+    font-family:sans-serif;
+    font-size:30px;
+    font-weight:bold;
+    color:blue;
+}
+#middlePart #firstPart1 #register { /*put the sign up lable in the first module of the middle part, under the welcoming sentence, and set its font, size and color*/
+    position:absolute;
+    font-family:sans-serif;
+    font-size:25px;
+    font-weight:bold;
+    color:blue;
+    top:25%;
+    left:39%;
+}
+#middlePart #firstPart1 #IDInput2{ /*put the student ID input box in the first module of the middle part, uder the sign up lable, and set its font and size*/
+    position:absolute;
+    font-size:20px;
+    font-family: sans-serif;
+    top:60%;
+}
+#middlePart #firstPart1 #emailInput2 { /*put the email input box in the first module of the middle part, under the student ID input box, and set its font and size*/
+    position:absolute;
+    font-size:20px;
+    font-family:sans-serif;
+    top:80%;
+}
+#middlePart #firstPart1 #usernameInput2 { /*put the username input box in the first module of the middle part, under the email input box, and set its font and size*/
+    position:absolute;
+    font-size:20px;
+    font-family:sans-serif;
+    top:100%;
+}
+#middlePart #secondPart1 { /*set the position of the second module of the middle part div element*/
+    position:absolute;
+    top: 41%;
+    left:23%;
+    height:10%;
+}
+#middlePart #secondPart1 #chooseGender { /*put the text "choose gender" in the second module of the middle part, and set its font, size and color*/
+    font-size:20px;
+    font-family: sans-serif;
+    color:blue;
+}
+#middlePart #secondPart1 #chooseGender #fontSize1 { /*put the gender select bar in the second module of the middle part, next to the text "choose gender", and set its font, size and color*/
+    font-size:20px;
+    font-family: sans-serif;
+    color:gray;
+}
+#middlePart #secondPart1 #bday { /*put the text "DOB" in the second module of the middle part, and set its font, size and color*/
+    position:absolute;
+    font-size:20px;
+    font-family: sans-serif;
+    color:blue;
+    top:52%;
+    left:15%;
+}
+#middlePart #secondPart1 #bday #fontSize2 { /*put the birthday input box in the second module of the middle part, next to the text "DOB", and set its font, size and color*/
+    font-size:20px;
+    font-family: sans-serif;
+    color:gray;
+}
+#middlePart #thirdPart1 { /*set the position of the third module of the middle part div element*/
+    position:absolute;
+    top: 52%;
+    left:15%;
+    height:30%;
+    width:65%;
+}
+#middlePart #thirdPart1 #passwordInput2 { /*put the password input box in the third module of the middle part, and set its font and size*/
+    font-size:20px;
+    font-family: sans-serif;
+    position:absolute;
+    top:0%;
+}
+#middlePart #thirdPart1 #passwordInput3 { /*put another password input box in the third module of the middle part, under the previous password input box, and set its font and size*/
+    font-size:20px;
+    font-family: sans-serif;
+    position:absolute;
+    top:18%;
+}
+#middlePart #thirdPart1 #bio { /*put the bio input box in the third module of the middle part, uder the password input box*/
+    position:absolute;
+    top:36%;
+    left:0.5%;
+}
+#middlePart #thirdPart1 #bio #bioInput1 { /*set the bio input box's content's size and font*/
+    font-size:20px;
+    font-family: sans-serif;
+}
+#middlePart #thirdPart1 #submitButton1 { /*put the submit button in the third module of the middle part, under the bio input box, set its font and size*/
+    position:absolute;
+    top:77%;
+    left:76%;
+    font-family: sans-serif;
+    font-size:20px;
+}
+#middlePart #thirdPart1 #errorM2 { /*put the error message in the third module of the middle part, under the submit button, set its color, background color, font and size*/
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:20px;
+    color:red;
+    background-color:white;
+    top:90%;
+    left:-8%;
+    position:absolute;
+    width: 113%;
+}

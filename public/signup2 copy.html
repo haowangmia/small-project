@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup2</title>
+    <link rel="stylesheet" href="stylesheets/signup2.css">
+</head>
+<body>
+    <img id="signupbg" src="images/WechatIMG47757.png" alt="signInPage"> <!--background image for the whole page-->
+    <div id="middlePart"> <!--divide the middle part into 3 modules-->
+        <div id="firstPart1"> <!--the first module are the welcoming sentence and 'sign up' lable and eamil, student ID and username input boxes-->
+            <h1 id="welcoming">WELCOME TO UNION HOUSE :)))</h1>
+            <h2 id="register">SIGN UP</h2>
+            <p><input id="emailInput2" type="text" size="43" placeholder="Please enter your email adress"></p>
+            <p><input id="IDInput2" type="text" size="43" placeholder="Please enter your student ID"></p>
+            <p><input id="usernameInput2" type="text" size="43" placeholder="Please enter your username"></p>
+        </div>
+        <div id="secondPart1"> <!--the second module are the gender select bar and birthday input box-->
+            <div id="chooseGender">Choose your gender:
+                <select id="fontSize1">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Transgender</option>
+                    <option value="">Gender Neutral</option>
+                    <option value="">Others</option>
+                </select>
+            </div>
+            <div id="bday">DOB:
+                <input id="fontSize2" type="date">
+            </div>
+        </div>
+        <div id="thirdPart1"> <!--the third module are 2 password input boxes, 1 bio input box, 1 submit button and 1 error message-->
+            <p><input id="passwordInput2" type="password" size="43" placeholder="Please enter your password"></p>
+            <p><input id="passwordInput3" type="password" size="43" placeholder="Please enter your password again"></p>
+            <div id="bio">
+                <textarea id="bioInput1" rows="3" cols="42" placeholder="Please enter your bio"></textarea>
+            </div>
+            <button type="button" id="submitButton1" onclick="signUpSuccess()/*store_user_info()*/">SUBMIT</button>
+            <p id="errorM2"></p>
+        </div>
+    </div>
+    <script src="javascripts/signup2.js"></script>
+</body>
+</html>

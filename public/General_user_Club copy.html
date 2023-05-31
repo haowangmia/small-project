@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club</title>
+    <link rel="stylesheet" href="stylesheets/General_user.css">
+    <script src="https://kit.fontawesome.com/384684e39d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Navigation bar for the page including a logo, a log out div-->
+    <header>
+
+        <div class="logo">
+          <img src="logo.png" alt="logo">
+        </div>
+
+        <div id="log_out">
+            <a href="https://www.google.com">Log out</a>
+        </div>
+
+      </header>
+
+
+
+    <!--Information section for loggers on the left side of the page-->
+    <div class="member_state">
+
+         <!--Click the circle to jump back to the general user's information interface-->
+        <a href="https://google.com" class="people_name">
+            <div class="circle">
+                <div class="name_of_user">LL</div>
+            </div>
+        </a>
+
+        <!--the personal information for logger includeing their username, gender, date of birth, description-->
+            <div class="personal_info">
+                <br>
+                <div id="username"><b>Username</b> Liangce Li</div>
+                <br>
+                <div id="gender"><b>gender</b> male</div>
+                <br>
+                <div id="dob"><b>Date of birth</b> 22/01/2003</div>
+                <br>
+                <div id="description"><b>Personal description</b> *****************************************</div>
+                <br>
+            </div>
+
+            <!--A button allows logger to edit their personal information-->
+            <div><button type="button" id="edit_personinfo" onclick="change_btn(); edit_info();">Edit</button></div>
+
+    </div>
+
+    <!--The main page, shows the events published by the club, if you want to join a certain event, you can click on them-->
+    <div id="main">
+        <a href="https://www.google.com">
+            <div class="event">
+                <p>Event1</p>
+            </div>
+        </a>
+
+        <a href="https://www.google.com">
+            <div class="event">
+                <p>Event2</p>
+            </div>
+        </a>
+
+        <a href="https://www.google.com">
+            <div class="event">
+                <p>Event3</p>
+            </div>
+        </a>
+
+        <a href="https://www.google.com">
+            <div class="event">
+                <p>Event4</p>
+            </div>
+        </a>
+
+    </div>
+
+     <!--Section about club information-->
+     <div class="club_description">
+        <div>
+            <h3><b>Information about the clubs</b></h3>
+            <hr/>
+            <p>Introduce the information of the clubs you joined</p>
+        </div>
+     </div>
+
+    <!--Section of updates the clubs published-->
+    <div class="clubupdate">
+        <div>
+            <h3><b>CLUB1</b></h3>
+            <p>New update of club1</p>
+            <hr/>
+        </div>
+
+        <div>
+            <h3><b>CLUB2</b></h3>
+            <p>New update of club2</p>
+            <hr/>
+        </div>
+
+        <div>
+            <h3><b>CLUB3</b></h3>
+            <p>New update of club3</p>
+            <hr/>
+        </div>
+
+        <div>
+            <h3><b>CLUB4</b></h3>
+            <p>New update of club4</p>
+            <hr/>
+        </div>
+
+        <div>
+            <h3><b>CLUB5</b></h3>
+            <p>New update of club5</p>
+            <hr/>
+        </div>
+
+        <div>
+            <h3><b>CLUB6</b></h3>
+            <p>New update of club6</p>
+            <hr/>
+        </div>
+
+        <div class="">
+            <h3><b>CLUB7</b></h3>
+            <p>New update of club7</p>
+            <hr/>
+        </div>
+    </div>
+
+
+    <script src="javascripts/User_and_Club.js"></script>
+
+</body>
+</html>
